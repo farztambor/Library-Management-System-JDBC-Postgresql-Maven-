@@ -21,14 +21,14 @@ public class Borrower {
     public void setName(String name ){
         this.name = name;
     }
-    public String getName(String name){
+    public String getName(){
         return  this.name = name;
     }
 
     public void setEmail(String email){
         this.email=email;
     }
-    public String getEmail(String email){
+    public String getEmail(){
         return this.email = email;
     }
 }
