@@ -12,6 +12,8 @@ public class BookDaoImp implements BookDao{
 
     @Override
     public Book get(int id) throws SQLException {
+
+
         return null;
     }
 
@@ -41,12 +43,12 @@ public class BookDaoImp implements BookDao{
     }
 
     @Override
-    public int save(Book book) throws SQLException {
-        return 0;
+    public void save(Book book) throws SQLException {
+
     }
 
     @Override
-    public int insert(Book book) throws SQLException {
+    public void insert(Book book) throws SQLException {
         String sql = "INSERT INTO books (title, author, available) VALUES (?, ?, ?)";
         try(Connection conn = DBConnection.getConnection();
         PreparedStatement statement = conn.prepareStatement(sql)){
@@ -57,16 +59,16 @@ public class BookDaoImp implements BookDao{
         }catch (Exception e){
             throw new RuntimeException(e);
         }
-        return 0;
+
     }
 
     @Override
-    public int update(Book book) throws SQLException {
-        return 0;
+    public void update(Book book) throws SQLException {
+
     }
 
     @Override
-    public int delete(Book book) throws SQLException {
-        return 0;
+    public void delete(Book book) throws SQLException {
+
     }
 }
