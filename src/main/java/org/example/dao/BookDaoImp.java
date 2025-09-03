@@ -63,12 +63,15 @@ public class BookDaoImp implements BookDao{
     }
 
     @Override
-    public void update(Book book) throws SQLException {
+    public void update(int t) throws SQLException {
 
     }
 
     @Override
-    public void delete(Book book) throws SQLException {
+    public void delete(int t) throws SQLException {
 
     }
-}
+
+
+    }
+
